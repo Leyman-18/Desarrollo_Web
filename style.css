@@ -1,0 +1,23 @@
+main {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "aside  section section section section";
+  row-gap: 1;
+  column-gap: 1;
+  grid-template-rows: 30% 70% 10%;
+  height: 98vh;
+}
+
+section {
+  grid-area: section;
+  border: 1px solid #a8dadc;
+  background-color: #f1faee;
+}
+
+aside {
+  grid-area: aside;
+  border: 1px solid #a8dadc;
+  background-color: #f1faee;
+}
