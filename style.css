@@ -3,10 +3,12 @@ main {
   gap: 7px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "aside  section section section section";
+  "header header  header  header  header"
+  "aside  section section section section"
+  "footer footer  footer  footer  footer";
   row-gap: 1;
   column-gap: 1;
-  grid-template-rows: 30% 70% 10%;
+  grid-template-rows: 20% 70% 10%;
   height: 98vh;
 }
 
@@ -18,6 +20,18 @@ section {
 
 aside {
   grid-area: aside;
+  border: 1px solid #a8dadc;
+  background-color: #f1faee;
+}
+
+footer{
+  grid-area: footer;
+  border: 1px solid #a8dadc;
+  background-color: #f1faee;
+}
+
+header{
+  grid-area: header;
   border: 1px solid #a8dadc;
   background-color: #f1faee;
 }
