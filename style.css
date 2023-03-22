@@ -1,13 +1,14 @@
 main {
+  font-family: Helvetica, sans-serif;
   display: grid;
-  gap: 7px;
+  /* gap: 7px; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "header header  header  header  header"
   "aside  section section section section"
   "footer footer  footer  footer  footer";
-  row-gap: 1;
-  column-gap: 1;
+  /* row-gap: 1;
+  column-gap: 1; */
   grid-template-rows: 20% 70% 10%;
   height: 98vh;
 }
@@ -15,25 +16,32 @@ main {
 section {
   grid-area: section;
   border: 1px solid #a8dadc;
-  background-color: #f1faee;
+  background-color: white;
+  padding: 20px;
 }
 
 aside {
   grid-area: aside;
   border: 1px solid #a8dadc;
-  background-color: #f1faee;
+  background-color: #f1f1f1; 
+  padding: 20px; 
 }
 
 footer{
   grid-area: footer;
   border: 1px solid #a8dadc;
-  background-color: #f1faee;
+  background-color: #ddd;
+  padding: 20px; 
+  text-align: center;
 }
 
 header{
   grid-area: header;
+  padding: 45px; 
   border: 1px solid #a8dadc;
-  background-color: #f1faee;
+  text-align: center; 
+  background: #1abc9c;
+  color: white; 
 }
 
 main{
@@ -49,6 +57,12 @@ nav li{
 }
 
 .picture img{
+  object-fit: cover;
+  width: 1420px;
+  height: 350px;
+}
+
+.header img{
   object-fit: cover;
   max-width: 300px;
 }
