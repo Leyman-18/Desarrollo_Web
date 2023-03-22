@@ -35,3 +35,23 @@ header{
   border: 1px solid #a8dadc;
   background-color: #f1faee;
 }
+
+main{
+  position: relative;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav li{
+  margin-bottom: 10px;
+}
+
+.picture img{
+  object-fit: cover;
+  max-width: 300px;
+}
+
+/* sections */
+
